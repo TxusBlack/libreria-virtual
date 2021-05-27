@@ -3,7 +3,7 @@ function download(el) {
   const element = document.createElement("a");
   element.setAttribute(
     "href",
-    path.join(__dirname, "../", "books", `${el}.pdf`)
+    `./assets/books/${el}.pdf`
   );
   // element.setAttribute("download", filename);
 
