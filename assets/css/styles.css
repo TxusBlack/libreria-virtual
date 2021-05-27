@@ -31,3 +31,28 @@ body {
   border-radius: 0;
   background: none;
 }
+.aside-white {
+  background: white !important;
+  border-right: 1px solid #E9EBFC;
+}
+.nav-finder {
+  background: white !important;
+  border-bottom: 1px solid #E9EBFC;
+}
+.title-page {
+  letter-spacing: 0px;
+  color: #212B36 !important;
+  font-weight: bold !important;
+}
+.item-nav {
+  color: #9C9EB2 !important;
+}
+.item-nav:hover {
+  color: #212B36 !important;
+}
+.item-nav-active {
+  color: #212B36 !important;
+}
+.nav-item {
+  margin: 8px 0;
+}

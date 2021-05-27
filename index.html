@@ -25,6 +25,7 @@
       integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
       crossorigin="anonymous"
     ></script>
+    <script src="./assets/js/script.js"></script>
     <!-- <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css"
@@ -47,11 +48,10 @@
   <body>
     <div class="container-fluid">
       <div class="row min-vh-100 flex-column flex-md-row">
-        <aside class="col-12 col-md-2 p-0 bg-light flex-shrink-1">
+        <aside class="col-12 col-md-2 p-0 flex-shrink-1 aside-white">
           <nav
             class="
               navbar navbar-expand navbar-light
-              bg-light
               flex-md-column flex-row
               align-items-start
               py-2
@@ -67,57 +67,57 @@
                 "
               >
                 <li class="nav-item">
-                  <a class="nav-link pl-0 text-nowrap text-center py-4" href="#">
+                  <a class="nav-link pl-0 text-nowrap text-center py-4 title-page" href="#">
                     <!-- <i class="fa fa-bullseye fa-fw"></i> -->
-                    <span style="font-size: 20px">BOOKSTORE</span></a
+                    <span style="font-size: 20px">B O O K S T O R E</span></a
                   >
                 </li>
                 <li class="nav-item">
                   <a class="nav-link pl-0" href="#">
-                    <span class="d-none d-md-inline"
-                      >LIBROS DE ARQUITECTURA</span
+                    <span class="d-none d-md-inline item-nav"
+                      >Libros de Arquitectura</span
                     ></a
                   >
                 </li>
                 <li class="nav-item">
                   <a class="nav-link pl-0" href="#">
-                    <span class="d-none d-md-inline">LIBROS DE BIOLOGIA</span></a
+                    <span class="d-none d-md-inline item-nav">Libros de Biologia</span></a
                   >
                 </li>
                 <li class="nav-item">
                   <a class="nav-link pl-0" href="#">
-                    <span class="d-none d-md-inline"
-                      >LIBROS DE COCINA Y BEBIDAS</span
+                    <span class="d-none d-md-inline item-nav"
+                      >Libros de cocina y bebidas</span
                     ></a
                   >
                 </li>
                 <li class="nav-item">
                   <a class="nav-link pl-0" href="#">
-                    <span class="d-none d-md-inline">LIBROS DE DANZA</span></a
+                    <span class="d-none d-md-inline item-nav">Libros de danza</span></a
                   >
                 </li>
                 <li class="nav-item">
                   <a class="nav-link pl-0" href="#">
-                    <span class="d-none d-md-inline"
-                      >LIBROS DE DEPORTES</span
+                    <span class="d-none d-md-inline item-nav"
+                      >Libros de deportes</span
                     ></a
                   >
                 </li>
                 <li class="nav-item">
                   <a class="nav-link pl-0" href="#">
-                    <span class="d-none d-md-inline">LIBROS DE DERECHO</span></a
+                    <span class="d-none d-md-inline item-nav">Libros de derecho</span></a
                   >
                 </li>
                 <li class="nav-item">
                   <a class="nav-link pl-0" href="#">
-                    <span class="d-none d-md-inline"
-                      >LITERATURA Y FICCIÓN</span
+                    <span class="d-none d-md-inline item-nav"
+                      >Literatura y ficción</span
                     ></a
                   >
                 </li>
                 <li class="nav-item">
                   <a class="nav-link pl-0" href="#">
-                    <span class="d-none d-md-inline">NO FICCIÓN</span></a
+                    <span class="d-none d-md-inline item-nav">No ficción</span></a
                   >
                 </li>
               </ul>
@@ -128,7 +128,7 @@
           <nav
             class="
               navbar navbar-expand-lg navbar-light
-              bg-light
+              nav-finder
               d-block d-sm-none d-md-block
             "
           >
@@ -139,10 +139,10 @@
               </div>
           </nav>
           <section class="container py-4">
-            <h2>Categoría</h2>
+            <h2>Todos los libros</h2>
             <div class="row">
-              <div class="col">
-                <div class="card-container">
+              <div class="col col-6 col-sm-6 col-xs-3 col-md-2 col-lg-2 col-xl-2">
+                <div class="card-container" onclick="download(1)">
                   <div class="card">
                     <img
                       src="https://via.placeholder.com/300"
@@ -154,8 +154,8 @@
                   <p class="card-subtitle">Subtitulo</p>
                 </div>
               </div>
-              <div class="col">
-                <div class="card-container">
+              <div class="col col-6 col-sm-6 col-xs-3 col-md-2 col-lg-2 col-xl-2">
+                <div class="card-container" onclick="download(2)">
                   <div class="card">
                     <img
                       src="https://via.placeholder.com/300"
@@ -167,8 +167,8 @@
                   <p class="card-subtitle">Subtitulo</p>
                 </div>
               </div>
-              <div class="col">
-                <div class="card-container">
+              <div class="col col-6 col-sm-6 col-xs-3 col-md-2 col-lg-2 col-xl-2">
+                <div class="card-container" onclick="download(3)">
                   <div class="card">
                     <img
                       src="https://via.placeholder.com/300"
@@ -180,8 +180,8 @@
                   <p class="card-subtitle">Subtitulo</p>
                 </div>
               </div>
-              <div class="col">
-                <div class="card-container">
+              <div class="col col-6 col-sm-6 col-xs-3 col-md-2 col-lg-2 col-xl-2">
+                <div class="card-container" onclick="download(4)">
                   <div class="card">
                     <img
                       src="https://via.placeholder.com/300"
@@ -193,8 +193,8 @@
                   <p class="card-subtitle">Subtitulo</p>
                 </div>
               </div>
-              <div class="col">
-                <div class="card-container">
+              <div class="col col-6 col-sm-6 col-xs-3 col-md-2 col-lg-2 col-xl-2">
+                <div class="card-container" onclick="download(5)">
                   <div class="card">
                     <img
                       src="https://via.placeholder.com/300"
@@ -208,8 +208,8 @@
               </div>
             </div>
             <div class="row">
-              <div class="col">
-                <div class="card-container">
+              <div class="col col-6 col-sm-6 col-xs-3 col-md-2 col-lg-2 col-xl-2">
+                <div class="card-container" onclick="download(6)">
                   <div class="card">
                     <img
                       src="https://via.placeholder.com/300"
@@ -221,8 +221,8 @@
                   <p class="card-subtitle">Subtitulo</p>
                 </div>
               </div>
-              <div class="col">
-                <div class="card-container">
+              <div class="col col-6 col-sm-6 col-xs-3 col-md-2 col-lg-2 col-xl-2">
+                <div class="card-container" onclick="download(7)">
                   <div class="card">
                     <img
                       src="https://via.placeholder.com/300"
@@ -234,8 +234,8 @@
                   <p class="card-subtitle">Subtitulo</p>
                 </div>
               </div>
-              <div class="col">
-                <div class="card-container">
+              <div class="col col-6 col-sm-6 col-xs-3 col-md-2 col-lg-2 col-xl-2">
+                <div class="card-container" onclick="download(8)">
                   <div class="card">
                     <img
                       src="https://via.placeholder.com/300"
@@ -247,8 +247,8 @@
                   <p class="card-subtitle">Subtitulo</p>
                 </div>
               </div>
-              <div class="col">
-                <div class="card-container">
+              <div class="col col-6 col-sm-6 col-xs-3 col-md-2 col-lg-2 col-xl-2">
+                <div class="card-container" onclick="download(9)">
                   <div class="card">
                     <img
                       src="https://via.placeholder.com/300"
@@ -260,8 +260,8 @@
                   <p class="card-subtitle">Subtitulo</p>
                 </div>
               </div>
-              <div class="col">
-                <div class="card-container">
+              <div class="col col-6 col-sm-6 col-xs-3 col-md-2 col-lg-2 col-xl-2">
+                <div class="card-container" onclick="download(10)">
                   <div class="card">
                     <img
                       src="https://via.placeholder.com/300"
@@ -275,8 +275,8 @@
               </div>
             </div>
             <div class="row">
-              <div class="col">
-                <div class="card-container">
+              <div class="col col-6 col-sm-6 col-xs-3 col-md-2 col-lg-2 col-xl-2">
+                <div class="card-container" onclick="download(11)">
                   <div class="card">
                     <img
                       src="https://via.placeholder.com/300"
@@ -288,8 +288,8 @@
                   <p class="card-subtitle">Subtitulo</p>
                 </div>
               </div>
-              <div class="col">
-                <div class="card-container">
+              <div class="col col-6 col-sm-6 col-xs-3 col-md-2 col-lg-2 col-xl-2">
+                <div class="card-container" onclick="download(12)">
                   <div class="card">
                     <img
                       src="https://via.placeholder.com/300"
@@ -301,8 +301,8 @@
                   <p class="card-subtitle">Subtitulo</p>
                 </div>
               </div>
-              <div class="col">
-                <div class="card-container">
+              <div class="col col-6 col-sm-6 col-xs-3 col-md-2 col-lg-2 col-xl-2">
+                <div class="card-container" onclick="download(13)">
                   <div class="card">
                     <img
                       src="https://via.placeholder.com/300"
@@ -314,8 +314,8 @@
                   <p class="card-subtitle">Subtitulo</p>
                 </div>
               </div>
-              <div class="col">
-                <div class="card-container">
+              <div class="col col-6 col-sm-6 col-xs-3 col-md-2 col-lg-2 col-xl-2">
+                <div class="card-container" onclick="download(14)">
                   <div class="card">
                     <img
                       src="https://via.placeholder.com/300"
@@ -327,8 +327,8 @@
                   <p class="card-subtitle">Subtitulo</p>
                 </div>
               </div>
-              <div class="col">
-                <div class="card-container">
+              <div class="col col-6 col-sm-6 col-xs-3 col-md-2 col-lg-2 col-xl-2">
+                <div class="card-container" onclick="download(15)">
                   <div class="card">
                     <img
                       src="https://via.placeholder.com/300"
@@ -336,14 +336,14 @@
                       class="img-fluid"
                     />
                   </div>
-                  <h4 class="card-title">Estiramientos-Prevencion-2020</h4>
+                  <h4 class="card-title">Estiramientos Prevencion 2020</h4>
                   <p class="card-subtitle">Subtitulo</p>
                 </div>
               </div>
             </div>
             <div class="row">
-              <div class="col">
-                <div class="card-container">
+              <div class="col col-6 col-sm-6 col-xs-3 col-md-2 col-lg-2 col-xl-2">
+                <div class="card-container" onclick="download(16)">
                   <div class="card">
                     <img
                       src="https://via.placeholder.com/300"
@@ -355,8 +355,8 @@
                   <p class="card-subtitle">Subtitulo</p>
                 </div>
               </div>
-              <div class="col">
-                <div class="card-container">
+              <div class="col col-6 col-sm-6 col-xs-3 col-md-2 col-lg-2 col-xl-2">
+                <div class="card-container" onclick="download(17)">
                   <div class="card">
                     <img
                       src="https://via.placeholder.com/300"
@@ -364,12 +364,12 @@
                       class="img-fluid"
                     />
                   </div>
-                  <h4 class="card-title">Derecho-penal-I</h4>
+                  <h4 class="card-title">Derecho penal I</h4>
                   <p class="card-subtitle">Subtitulo</p>
                 </div>
               </div>
-              <div class="col">
-                <div class="card-container">
+              <div class="col col-6 col-sm-6 col-xs-3 col-md-2 col-lg-2 col-xl-2">
+                <div class="card-container" onclick="download(18)">
                   <div class="card">
                     <img
                       src="https://via.placeholder.com/300"
@@ -377,12 +377,12 @@
                       class="img-fluid"
                     />
                   </div>
-                  <h4 class="card-title">EL DERECHO CIVIL</h4>
+                  <h4 class="card-title">El derecho civil</h4>
                   <p class="card-subtitle">Subtitulo</p>
                 </div>
               </div>
-              <div class="col">
-                <div class="card-container">
+              <div class="col col-6 col-sm-6 col-xs-3 col-md-2 col-lg-2 col-xl-2">
+                <div class="card-container" onclick="download(19)">
                   <div class="card">
                     <img
                       src="https://via.placeholder.com/300"
@@ -390,12 +390,12 @@
                       class="img-fluid"
                     />
                   </div>
-                  <h4 class="card-title">Alicia en el pais de las maravillas-Carroll Lewis</h4>
+                  <h4 class="card-title">Alicia en el pais de las maravillas</h4>
                   <p class="card-subtitle">Subtitulo</p>
                 </div>
               </div>
-              <div class="col">
-                <div class="card-container">
+              <div class="col col-6 col-sm-6 col-xs-3 col-md-2 col-lg-2 col-xl-2">
+                <div class="card-container" onclick="download(20)">
                   <div class="card">
                     <img
                       src="https://via.placeholder.com/300"
@@ -403,14 +403,14 @@
                       class="img-fluid"
                     />
                   </div>
-                  <h4 class="card-title">Don Quijote de la Mancha-Cervantes Miguel</h4>
+                  <h4 class="card-title">Don Quijote de la Mancha</h4>
                   <p class="card-subtitle">Subtitulo</p>
                 </div>
               </div>
             </div>
             <div class="row">
-              <div class="col">
-                <div class="card-container">
+              <div class="col col-6 col-sm-6 col-xs-3 col-md-2 col-lg-2 col-xl-2">
+                <div class="card-container" onclick="download(21)">
                   <div class="card">
                     <img
                       src="https://via.placeholder.com/300"
@@ -418,12 +418,12 @@
                       class="img-fluid"
                     />
                   </div>
-                  <h4 class="card-title">Orgullo y prejuicio-Jane Austen</h4>
+                  <h4 class="card-title">Orgullo y prejuicio</h4>
                   <p class="card-subtitle">Subtitulo</p>
                 </div>
               </div>
-              <div class="col">
-                <div class="card-container">
+              <div class="col col-6 col-sm-6 col-xs-3 col-md-2 col-lg-2 col-xl-2">
+                <div class="card-container" onclick="download(22)">
                   <div class="card">
                     <img
                       src="https://via.placeholder.com/300"
@@ -431,12 +431,12 @@
                       class="img-fluid"
                     />
                   </div>
-                  <h4 class="card-title">Asi hablo Zaratustra-Friedrich Nietzsche</h4>
+                  <h4 class="card-title">Asi hablo Zaratustra</h4>
                   <p class="card-subtitle">Subtitulo</p>
                 </div>
               </div>
-              <div class="col">
-                <div class="card-container">
+              <div class="col col-6 col-sm-6 col-xs-3 col-md-2 col-lg-2 col-xl-2">
+                <div class="card-container" onclick="download(23)">
                   <div class="card">
                     <img
                       src="https://via.placeholder.com/300"
@@ -444,12 +444,12 @@
                       class="img-fluid"
                     />
                   </div>
-                  <h4 class="card-title">El arte de la guerra-Sun Tzu</h4>
+                  <h4 class="card-title">El arte de la guerra</h4>
                   <p class="card-subtitle">Subtitulo</p>
                 </div>
               </div>
-              <div class="col">
-                <div class="card-container">
+              <div class="col col-6 col-sm-6 col-xs-3 col-md-2 col-lg-2 col-xl-2">
+                <div class="card-container" onclick="download(24)">
                   <div class="card">
                     <img
                       src="https://via.placeholder.com/300"
@@ -461,8 +461,8 @@
                   <p class="card-subtitle">Subtitulo</p>
                 </div>
               </div>
-              <div class="col">
-                <div class="card-container">
+              <div class="col col-6 col-sm-6 col-xs-3 col-md-2 col-lg-2 col-xl-2">
+                <div class="card-container" onclick="download(1)">
                   <div class="card">
                     <img
                       src="https://via.placeholder.com/300"
